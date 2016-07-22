@@ -1350,7 +1350,7 @@ and dependencies (minified).
 				touchDrag=0; docDrag=0;
 				endTime=_getTime();
 				var offset=mCustomScrollBox.offset(),y=_coordinates(e)[0]-offset.top,x=_coordinates(e)[1]-offset.left;
-				if((endTime-runningTime)>30){return;}
+				// if((endTime-runningTime)>30){return;}
 				speed=1000/(endTime-startTime);
 				var easing="mcsEaseOut",slow=speed<2.5,
 					diff=slow ? [touchMoveY[touchMoveY.length-2],touchMoveX[touchMoveX.length-2]] : [0,0];
